@@ -1,0 +1,12 @@
+n=int(input())
+ans=n
+last=0
+s=0
+while n>0:
+    last=n%10
+    s=s*10+last
+    n=n//10
+if s==ans:
+    print("Palindrome")
+else:
+    print("Not Palindrome")        
